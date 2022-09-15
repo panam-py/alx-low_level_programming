@@ -7,7 +7,8 @@
 */
 int main(void)
 {
-int first, second, fib, count;
+int count;
+long int first, second, fib;
 first = 1;
 second = 2;
 printf("%d, %d, ", first, second);
