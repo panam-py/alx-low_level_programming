@@ -5,7 +5,7 @@
  *
  * Return: void
 */
-void main(void)
+int main(void)
 {
 long int first, second, sum_even, fib;
 first = 1;
