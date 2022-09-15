@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_square - Prints a square using #
- * @size: The size of square to be printed
- * Return: void
+* print_square - prints hashes squares.
+* @size: size of the square.
+* Return: no return.
 */
 // int main(void)
 // {
@@ -14,19 +14,16 @@
 // }
 void print_square(int size)
 {
-if (size < 0)
-{
-_putchar('\n');
-}
 int i, j;
-for (i = 1; i <= size; i++)
+
+for (i = 0; i < size; i++)
 {
-for (j = 1; j <= size; j++)
+for (j = 0; j < size; j++)
 {
 _putchar(35);
 }
 if (i != size - 1)
 _putchar('\n');
 }
+_putchar('\n');
 }
-
