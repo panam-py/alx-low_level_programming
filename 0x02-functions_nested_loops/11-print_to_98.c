@@ -12,6 +12,9 @@ if (n > 98)
 {
 for (; n <= 98; n--)
 {
+if (n == 98)
+printf("%d", n);
+else
 printf("%d, ", n);
 }
 }
@@ -19,8 +22,12 @@ else if (n < 98)
 {
 for (; n <= 98; n++)
 {
+if (n == 98)
+printf("%d", n);
+else
 printf("%d, ", n);
 }
 }
-printf("98\n");
+else
+printf("%d", n);
 }
