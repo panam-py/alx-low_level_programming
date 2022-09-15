@@ -24,11 +24,9 @@ for (i = 1; i <= size; i++)
 for (j = 1; j <= size; j++)
 {
 _putchar(35);
-if (j == size)
-{
+}
+if (i != size - 1)
 _putchar('\n');
-}
-}
 }
 }
 
