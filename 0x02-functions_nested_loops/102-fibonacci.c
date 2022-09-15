@@ -11,11 +11,11 @@ int count;
 long int first, second, fib;
 first = 1;
 second = 2;
-printf("%d, %d, ", first, second);
+printf("%ld, %ld, ", first, second);
 for (count = 1; count <= 48; count++)
 {
 fib = first + second;
-printf("%d, ", fib);
+printf("%ld, ", fib);
 first = second;
 second = fib;
 }
