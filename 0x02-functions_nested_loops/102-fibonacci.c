@@ -11,7 +11,7 @@ int first, second, fib, count;
 first = 1;
 second = 2;
 printf("%d, %d, ", first, second);
-for (count = 1; count <= 48; count ++)
+for (count = 1; count <= 48; count++)
 {
 fib = first + second;
 printf("%d, ", fib);
