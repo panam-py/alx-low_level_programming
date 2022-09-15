@@ -22,4 +22,5 @@ first = second;
 second = fib;
 }
 printf("%ld\n", sum_even + 2);
+return (0);
 }
