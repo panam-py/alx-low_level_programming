@@ -18,8 +18,8 @@ for (j = 0; argv[i][j] != '\0'; j++)
 {
 if (!isdigit(argv[i][j]))
 {
-    printf("Error\n");
-    return (1);
+printf("Error\n");
+return (1);
 }
 }
 cur = atoi(argv[i]);
