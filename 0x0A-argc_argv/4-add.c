@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Adds all args and prints result
@@ -9,16 +10,19 @@
  */
 int main(int argc, char *argv[])
 {
-int i, s, cur;
+int i, s, j, cur;
 s = 0;
 for (i = 1; i < argc; i++)
 {
-cur = atoi(argv[i]);
-if (cur == 0)
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-printf("Error\n");
-return (1);
+if (!isdigit(argv[i][j]))
+{
+    printf("Error\n");
+    return (1);
 }
+}
+cur = atoi(argv[i]);
 s += cur;
 }
 printf("%d\n", s);
